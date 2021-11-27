@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,6 +26,8 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section 
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap');
 
@@ -46,6 +53,11 @@ table {
 	border-spacing: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
 
 header {
     position: relative;
@@ -66,16 +78,50 @@ header {
 }
 
 .navigation {
-    z-index: 2;
-    position: relative;
-}
-
-.navigation ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    position: relative;
     width: 70%;
     margin: auto;
-    background-color: white;
+    gap: 15px;
+}
+
+.logo {
+    flex: 0 0 10%;
+    max-width: 10%; 
+}
+
+.logo img {
+    
+    width: 100%; 
+}
+
+.navigation .menu-1 {
+    flex: 0 0 70%;
+    max-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navigation .menu-2 {
+    flex: 0 0 20%;
+    max-width: 20%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.menu-1 li {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.menu-1 li a {
+    color: white;
+    text-decoration: none;
 }
 
 .content {
@@ -98,8 +144,8 @@ header {
     padding: 10.8039px;
 
     position: static;
-    width: 646.07px;
-    height:370.77px;
+    width: 320px;
+    height: auto;
     background-image: url(images/compu.png);
     background-repeat: repeat;
     background-size: 100% 100%;
@@ -115,4 +161,259 @@ header {
     
 }
 
+.banner-2 {
+    display: flex;
 }
+
+.banner-2 .text {
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+.grilla {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 70%;
+    margin: auto;
+}
+
+.container {
+    max-width: 70%;
+    margin: 30px auto;
+}
+
+.grilla .columna {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+/* or 114% */
+
+text-align: center;
+letter-spacing: 0.2px;
+}
+
+.grilla .columna img {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap');
+
+.btn-blue {
+    background: #2091F9;
+    border-radius: 35px;
+    display: block;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.btn-blue{
+    position: static;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 20px;
+
+
+    text-align: center;
+    letter-spacing: 0.1px;
+}
+
+.title-main {
+    display: block;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+
+}
+
+.title-main {
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 74px;
+    line-height: 84px;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.subtime-main {
+
+    display: block;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.1px;
+}
+
+.texto {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.1px
+    gap: 30px; 
+
+}
+
+
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 70%;
+    margin: auto;
+    
+    }
+
+.parrafo {
+    font-family: 'Raleway', sans-serif;
+}
+
+.titulo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+}
+.sub-titulo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 25px;    
+}
+.sub-titulo-xl{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 45px;    
+}
+
+.color-texto-blanco{
+    color: white;
+}
+
+#villanos-seccion{
+
+    display: flex;
+    margin: 0px 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+.villanos-caja-imagen {
+
+}
+
+.villanos-caja-texto {
+
+margin: 0px 40px;
+text-align: left;
+display: flex;
+flex-direction: column;
+
+}
+
+.descripcion-villanos{
+
+    margin: 10px 0px;
+}
+
+.villanos-bottom {
+    text-decoration: none;
+    background-color: #2091F9;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 5px 0px;
+    text-align: center;
+    width: 40%;
+}
+
+.protagonistas-bottom{
+    text-decoration: none;
+    background-color: #2091F9;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 8px 0px;
+    text-align: center;
+    width: 40%;
+}
+.texto-caja-protagonista {
+
+    margin: 0px 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #252B42;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-content {
+    margin: 20% auto;
+    display: flex;
+    width: 55%;
+    justify-content: space-between;    
+}
+
+.menu-footer{
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    width: 40%;
+    margin: 20px 30px;
+    justify-content: center;
+   
+}
+
+.menu-footer li a {
+    color: white;
+    text-decoration: none;
+    
+}
+.menu-footer li {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.redes.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 70%;
+    margin: auto;
+    }
+    
+
