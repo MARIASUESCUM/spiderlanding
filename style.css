@@ -81,7 +81,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
+    z-index: 9;
     position: relative;
     width: 70%;
     margin: auto;
@@ -415,5 +415,82 @@ flex-direction: column;
     max-width: 70%;
     margin: auto;
     }
+
+
+    #togglemenu {
+        display: inline-block;
+        color: red;
+        border-radius: 40px;
+        padding: 10px 25px;
+    }
     
 
+@media screen and (max-width: 768px){
+    .navigation .menu-1 {
+        position: fixed;
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        left: -100%;
+        top: 60px;
+        z-index: 9;
+        transition: all ease .5s;
+    }
+
+    .openen {
+        left: 0 !important;
+    }
+
+    .menu-1 li a {
+        color: rgb(58, 58, 58);
+    }
+
+    .grilla {
+        flex-direction: column;
+    }
+
+    .grilla .columna {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .banner-2 {
+
+        flex-direction: column;
+    }
+    
+    .titulo {
+       font-size: 30px ;
+    }
+
+    .background-computador {
+        height: 145px;
+        
+    }
+    #villanos-seccion {
+        flex-direction: column;
+    }
+    .villanos-caja-imagen{
+        width: 100%;
+    }
+    .villanos-caja-imagen img{
+        
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .villanos-bottom{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .protagonistas-bottom {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .footer-content {
+      flex-direction: column;
+    }
+}

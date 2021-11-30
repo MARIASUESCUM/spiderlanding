@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <base href="https://mariasuescum.github.io/spiderlanding/" />
+    <!--<base href="https://mariasuescum.github.io/spiderlanding/" />-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
@@ -35,6 +35,9 @@
                 <img src="./images/facebook.png" alt="">
                 <img src="./images/twitter.png" alt="">
                 <img src="./images/in.png" alt="">
+                <a href="javascript:void(0)" id="togglemenu">
+                    <img src="./images/Vector (1).png" alt="">
+                </a>
 
             </div>
 
@@ -135,7 +138,7 @@
                 <br>
                 <br>
                 <br>
-                <p class="parrafo"> película está protagonizada por Tom Holland, Zendaya, Jon Favreau,
+                <p class="parrafo"> Esta película está protagonizada por Tom Holland, Zendaya, Jon Favreau,
                     Jacob Batalon y Marisa Tomei, todos repitiendo sus papeles de
                     las películas anteriores de Spider.</p>
 
@@ -209,6 +212,19 @@
         </div>
 
     </footer>
+
+
+    <script>
+        const toggle_menu = document.querySelector('#togglemenu');
+        if(toggle_menu){
+            toggle_menu.addEventListener('click', () => {
+                const menu_1 = document.querySelector('.menu-1');
+                if(menu_1){
+                    menu_1.classList.toggle('openen');
+                }
+            });
+        }
+    </script>
 
 </body>
 
